@@ -11,8 +11,8 @@
 
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #f5f7fa;
-            color: #333;
+            background-color: #fff;
+            color: #007bff;
             padding-top: 20px;
         }
 
@@ -21,9 +21,9 @@
         }
 
         .resume {
-            /* padding: 30px;
+            padding: 30px;
             background-color: #fff;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             margin-top: 20px;
             margin-bottom: 20px;
             /* border-radius: 8px; */
@@ -108,6 +108,8 @@
 
         .form-group label {
             font-weight: 500;
+            color: #007bff;
+
         }
 
         @media (max-width: 576px) {
@@ -133,9 +135,9 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #f7f7f7;
+            background-color: #fff;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         }
 
         /* Form group styling */
@@ -226,9 +228,10 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1 class="text-center mb-5">Resume Maker</h1>
+    <div class="container mb-4">
         <form id="resumeForm">
+            <h1 class="text-center text-primary mb-5">Resume Maker</h1>
+
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="name">Full Name</label>
@@ -255,40 +258,40 @@
             </div>
             <div class="form-group">
                 <label for="education">Education</label>
-                <textarea class="form-control" id="education" rows="3"
+                <textarea class="form-control" id="education" rows="2"
                     placeholder="Bachelor of Science in Computer Science, XYZ University, 2020"></textarea>
             </div>
             <div class="form-group">
                 <label for="experience">Experience</label>
-                <textarea class="form-control" id="experience" rows="3"
+                <textarea class="form-control" id="experience" rows="2"
                     placeholder="Software Engineer at ABC Corp, 2021-Present"></textarea>
             </div>
             <div class="form-group">
                 <label for="skills">Skills</label>
-                <textarea class="form-control" id="skills" rows="3"
+                <textarea class="form-control" id="skills" rows="2"
                     placeholder="JavaScript, Python, React, Node.js"></textarea>
             </div>
             <div class="form-group">
                 <label for="projects">Projects</label>
-                <textarea class="form-control" id="projects" rows="3"
+                <textarea class="form-control" id="projects" rows="2"
                     placeholder="Personal Portfolio Website, E-commerce Platform"></textarea>
             </div>
             <div class="form-group">
                 <label for="certifications">Certifications</label>
-                <textarea class="form-control" id="certifications" rows="3"
+                <textarea class="form-control" id="certifications" rows="2"
                     placeholder="Certified Java Developer, AWS Certified Solutions Architect"></textarea>
             </div>
             <div class="form-group">
                 <label for="training">Training & Courses</label>
-                <textarea class="form-control" id="training" rows="3"
+                <textarea class="form-control" id="training" rows="2"
                     placeholder="Machine Learning Specialization, Coursera, 2021"></textarea>
             </div>
             <div class="form-group">
                 <label for="personalProjects">Personal Project Links</label>
-                <textarea class="form-control" id="personalProjects" rows="3"
+                <textarea class="form-control" id="personalProjects" rows="2"
                     placeholder="https://github.com/username/project1, https://github.com/username/project2"></textarea>
             </div>
-            <div class="text-center mb-5">
+            <div class="text-center">
                 <button type="submit" class="btn btn-custom text-light">Generate Resume</button>
                 <button type="reset" class="btn btn-secondary ml-2">Reset</button>
             </div>
